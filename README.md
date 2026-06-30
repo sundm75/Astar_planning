@@ -103,3 +103,27 @@ target_link_libraries(${PROJECT_NAME}
     system("pause   ");
 ```
 
+到第12节时 在main.cpp
+
+```
+initgraph(WIDTH, HEIGHT, EW_SHOWCONSOLE; // 初始化图形界面，同时显示控制台窗口)
+```
+
+创建了一个画图 ， 在 grid_map.cpp中 添加
+
+```
+setbkcolor(WHITE);
+        setlinecolor(BLACK);
+        setlinestyle(PS_SOLID, 2);
+        cleardevice();
+```
+
+操作draw_map, 不成功。
+
+解决 在 grid_map.cpp中 先添加
+
+```
+initgraph(WIDTH, HEIGHT, EW_SHOWCONSOLE; // 初始化图形界面，同时显示控制台窗口)
+```
+
+然后再操作 

@@ -2,6 +2,7 @@ project(strategy)
 
 file(GLOB STRATEGY_SRC_LISTS  ${CMAKE_CURRENT_SOURCE_DIR}/*.c ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp )
 
+#生成库
 add_library(${PROJECT_NAME}
 SHARED
 ${STRATEGY_SRC_LISTS}
